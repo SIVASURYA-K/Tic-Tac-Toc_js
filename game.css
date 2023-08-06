@@ -1,0 +1,29 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.numbers{
+  grid-template-columns: repeat(3,auto);
+
+}
+
+img{
+    height: 50px;
+    width: 50px;
+}
+
+.win{
+   animation: winanimation linear 1s infinite;
+}
+
+@keyframes winanimation {
+    0%{background-color:white}
+    100%{background-color: green;}
+}
